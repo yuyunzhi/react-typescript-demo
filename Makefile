@@ -1,5 +1,5 @@
 export PATH := $(shell pwd)/node_modules/.bin:$(PATH)
-.PHONY: init dev  build clean lint
+.PHONY: init dev build clean lint
 
 # 项目初始化
 init:
