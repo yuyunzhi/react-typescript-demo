@@ -10,3 +10,5 @@ dist
 *.lock
 *.js
 api/*
+src/**.test
+src/reportWebVitals.ts
