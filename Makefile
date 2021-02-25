@@ -1,5 +1,5 @@
 export PATH := $(shell pwd)/node_modules/.bin:$(PATH)
-.PHONY: init dev  build clean api
+.PHONY: init dev  build clean lint
 
 # 项目初始化
 init:
@@ -14,6 +14,7 @@ dev:init
 # build到online环境
 build:clean
 	yarn
+	yarn lint
 	npm run build
 
 clean:
