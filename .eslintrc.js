@@ -24,5 +24,6 @@ module.exports = {
     "no-undef": "off",
     "import/prefer-default-export": "off",
     "no-shadow": "off",
+    "no-console": "off",
   },
 };
