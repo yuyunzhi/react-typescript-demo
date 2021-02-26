@@ -25,5 +25,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-shadow": "off",
     "no-console": "off",
+    "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
   },
 };
