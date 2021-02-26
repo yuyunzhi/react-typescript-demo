@@ -13,7 +13,7 @@ interface IRequestParams {
 }
 
 const axios = Axios.create({
-  baseURL: isDevelopment ? "/api/" : process.env.REACT_APP_DOMAIN, // api的base_url
+  baseURL: isDevelopment ? "/api/" : process.env.REACT_APP_DOMAIN,
   timeout: 55000,
 });
 
