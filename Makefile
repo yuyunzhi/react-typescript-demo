@@ -9,6 +9,7 @@ init:
 
 # 开发模式
 dev:init
+    yarn mockServer
 	yarn run start
 
 # build到online环境

@@ -2,8 +2,8 @@ import React from "react";
 import "./App.scss";
 
 function App() {
-  console.log("api", process.env);
-  fetch(`http://localhost:3000/users`).then((res) => {
+  console.log("api", process.env.REACT_APP_DOMAIN);
+  fetch(`/api/users`).then((res) => {
     console.log(res);
   });
 
