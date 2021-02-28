@@ -21,6 +21,8 @@ const axios = Axios.create({
 axios.interceptors.request.use(
   config => {
     config.headers.XYZ = 6677;
+    config.headers.Authorization = `Bearer token`
+    config.headers['Content-Type'] = "application/json"
     return config;
   },
   error => {

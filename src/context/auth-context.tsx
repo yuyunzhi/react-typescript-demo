@@ -1,4 +1,10 @@
-import React, { ReactNode, FC, useState } from "react";
+import React, {
+  ReactNode,
+  FC,
+  useState,
+  useContext,
+  createContext,
+} from "react";
 
 interface IAuthContext {}
 
@@ -6,7 +12,7 @@ interface IAuthProvider {
   children: ReactNode;
 }
 
-const AuthContext = React.createContext<IAuthContext | undefined>(undefined);
+const AuthContext = createContext<IAuthContext | undefined>(undefined);
 
 AuthContext.displayName = "AuthContext";
 
@@ -24,7 +30,7 @@ export const AuthProvider: FC<IAuthProvider> = (props) => {
 };
 
 export const useAuth = () => {
-  const context = React.useContext(AuthContext);
+  const context = useContext(AuthContext);
 
   if (!context) {
     throw new Error("useAuth必须在AuthProvider中使用");
