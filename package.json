@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "postinstall": "husky install",
     "lint": "eslint . --ext .js,.ts,.tsx src --max-warnings 5",
-    "json-server": "json-server --watch ./__json_server_mock__/db.json"
+    "json-server": "json-server ./__json_server_mock__/db.json --watch --port 3000 --middlewares ./__json_server_mock__/middleware.js"
   },
   "eslintConfig": {
     "extends": [

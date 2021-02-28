@@ -3,6 +3,7 @@ import "./App.scss";
 import axiosApi from "../api";
 
 function App() {
+  // RESTFULL API
   useEffect(() => {
     // 查
     axiosApi.get("/users").then((res) => {
@@ -23,6 +24,19 @@ function App() {
     // axiosApi.delete("/users/6").then((res) => {
     //   console.log("delete", res);
     // });
+  }, []);
+
+  // 非RESTFULL API
+  useEffect(() => {
+    axiosApi
+      .post("/login", { username: "jack", password: "123" })
+      .then((res) => {
+        console.log("login", res);
+      });
+
+    axiosApi.post("/register").then((res) => {
+      console.log("register", res);
+    });
   }, []);
 
   return <div className="App">123</div>;
