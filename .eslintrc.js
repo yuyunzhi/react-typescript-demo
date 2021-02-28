@@ -27,5 +27,7 @@ module.exports = {
     "no-console": "off",
     "no-param-reassign": "off",
     "no-restricted-syntax": "off",
+    "react/prop-types": "off",
+    "react/no-children-prop": "off",
   },
 };

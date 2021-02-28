@@ -16,9 +16,9 @@ function App() {
     // });
 
     // 增
-    axiosApi.post("/users", { name: "hahah" }).then((res) => {
-      console.log("post", res);
-    });
+    // axiosApi.post("/users", { name: "hahah" }).then((res) => {
+    //   console.log("post", res);
+    // });
 
     // 删
     // axiosApi.delete("/users/6").then((res) => {
