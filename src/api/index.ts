@@ -51,7 +51,6 @@ axios.interceptors.response.use(
 );
 
 export function api<T>(url: string, method: Method, req: IRequestParams): Promise<IResponse<T>> {
-  console.log('API url',url,req);
   switch (method) {
     case "get":
       return axios.get(url);

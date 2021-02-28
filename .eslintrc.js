@@ -29,5 +29,7 @@ module.exports = {
     "no-restricted-syntax": "off",
     "react/prop-types": "off",
     "react/no-children-prop": "off",
+    "no-unused-vars": "off",
+    "import/no-extraneous-dependencies": "off",
   },
 };
