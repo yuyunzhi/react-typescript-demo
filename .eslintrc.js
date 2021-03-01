@@ -31,5 +31,9 @@ module.exports = {
     "react/no-children-prop": "off",
     "no-unused-vars": "off",
     "import/no-extraneous-dependencies": "off",
+    "max-len": "off",
+    "react/state-in-constructor": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
   },
 };

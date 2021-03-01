@@ -10,11 +10,10 @@ function App() {
       console.log("get", res);
     });
 
-    // 改
+    //
     // axiosApi.patch("/users/5", { name: 6666 }).then((res) => {
     //   console.log("patch", res);
     // });
-
     // 增
     // axiosApi.post("/users", { name: "hahah" }).then((res) => {
     //   console.log("post", res);
