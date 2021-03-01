@@ -35,7 +35,6 @@ export const AuthProvider: FC<IAuthProvider> = (props) => {
   // 初始化从storage里取值
   useEffect(() => {
     const token = bootstrapToken();
-    console.log("token", token);
     setLoginState(!!token);
   }, []);
 

@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.scss";
 import axiosApi from "../api";
-import { useAuth } from "../context/auth-context";
 
 function App() {
-  const { loginState } = useAuth();
-  console.log("loginState", loginState);
   // RESTFULL API
   useEffect(() => {
     // 查
